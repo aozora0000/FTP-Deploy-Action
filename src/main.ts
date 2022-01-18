@@ -20,6 +20,7 @@ async function runDeployment() {
       "log-level": optionalLogLevel("log-level", core.getInput("log-level")),
       "security": optionalSecurity("security", core.getInput("security"))
     };
+
     console.log(args);
 
     //await deploy(args);
