@@ -15,6 +15,10 @@ jobs:
       - name: 📂 Sync files
         uses: ./
         with:
-          server: ftp.samkirkland.com
-          username: test@samkirkland.com
-          password: ${{ secrets.ftp_password }}
+          server: ftp.example.com
+          username: test@ftp.example.com
+          password: testpassword
+          exclude: |
+            .gitignore
+            .github
+            images
